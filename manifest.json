@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "My Context Menu Extension",
+  "version": "1.0",
+  "description": "Adds an item to the right-click menu",
+  "permissions": ["contextMenus", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["arxiv_modal.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["utils/xml.js", "arxiv_modal.js", "arxiv_api.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

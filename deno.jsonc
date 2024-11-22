@@ -1,0 +1,34 @@
+{
+  "lint": {
+    "rules": {
+      "tags": [
+        "recommended"
+      ],
+      "include": [
+        "ban-untagged-ignore",
+        "ban-unknown-rule-code",
+        "ban-unused-ignore",
+        "ban-ts-comment",
+        "ban-types",
+        "no-constant-condition",
+        "no-empty-function",
+        "no-implicit-globals",
+        "no-irregular-whitespace",
+        "no-prototype-builtins",
+        "prefer-const",
+        "prefer-destructuring",
+        "prefer-template"
+      ],
+      "exclude": [
+        "ban-node-builtins", // Exclude as Deno code running in the browser avoids Node.js APIs naturally
+        "no-window"
+      ]
+    }
+  },
+  "lint-include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx"
+  ]
+}

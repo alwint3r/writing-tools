@@ -1,0 +1,72 @@
+/* The Modal (background) */
+.alwin-x-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.alwin-x-modal-content {
+  background-color: #fff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 600px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* The Close Button */
+.alwin-x-close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.alwin-x-close:hover,
+.alwin-x-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.alwin-x-modal-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.alwin-x-modal-header > h2 {
+  flex-grow: 1;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.alwin-x-modal-item {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.alwin-x-modal-item > .alwin-x-arxiv-title {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.alwin-x-modal-item > .alwin-x-modal-arxiv-author {
+  font-size: 1.1em;
+  color: #666;
+}
+
+.alwin-x-modal-item > .alwin-x-modal-arxiv-abstract {
+  margin-top: 10px;
+}

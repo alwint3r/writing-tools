@@ -1,0 +1,48 @@
+# Logs
+logs
+*.log
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Build output
+build/
+dist/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+
+# Environment variables
+.env
+
+# Package lock files (if not using them)
+package-lock.json
+yarn.lock
+
+# Optional: If you are using a specific build tool, you might want to ignore its cache or output directories
+# Example for Webpack:
+webpack-bundle-analyzer/
+
+# Optional: Ignore any compiled JavaScript if you're writing in TypeScript or another language that compiles to JS
+*.js
+!background.js
+!content.js
+!popup.js
+!options.js
+
+# Optional: If using a specific framework, add its build artifacts here
+# Example for React:
+build/

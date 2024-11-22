@@ -32,17 +32,5 @@ Thumbs.db
 package-lock.json
 yarn.lock
 
-# Optional: If you are using a specific build tool, you might want to ignore its cache or output directories
-# Example for Webpack:
 webpack-bundle-analyzer/
-
-# Optional: Ignore any compiled JavaScript if you're writing in TypeScript or another language that compiles to JS
-*.js
-!background.js
-!content.js
-!popup.js
-!options.js
-
-# Optional: If using a specific framework, add its build artifacts here
-# Example for React:
 build/

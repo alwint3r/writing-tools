@@ -1,15 +1,5 @@
 export const context = {};
 
-export function close() {
-  if (!context.modal) {
-    return;
-  }
-
-  context.modal.style.display = "none";
-  context.modal.querySelector(".alwin-x-modal-body").innerHTML = "";
-  document.removeEventListener("click", handleClickOutsideModalContent);
-}
-
 function handleClickOutsideModalContent(event) {
   const modalContent = document.querySelector(".alwin-x-modal-content");
   if (!modalContent) {
@@ -19,6 +9,16 @@ function handleClickOutsideModalContent(event) {
   if (!modalContent.contains(event.target)) {
     close();
   }
+}
+
+export function close() {
+  if (!context.modal) {
+    return;
+  }
+
+  context.modal.style.display = "none";
+  context.modal.querySelector(".alwin-x-modal-body").innerHTML = "";
+  document.removeEventListener("click", handleClickOutsideModalContent);
 }
 
 export function render() {

@@ -12,7 +12,10 @@
 
       if (request.action === "searchOnArxiv") {
         const selection = window.getSelection().toString();
-        const { feed } = await arxivApi.search(selection);
+        const options = {};
+        options.search_query =
+          `ti:${selection} OR abs:${selection} AND cat:cs.AI OR cat:cs.SE OR cat:cs.CR OR cat:eess.SY`;
+        const { feed } = await arxivApi.search(options);
         console.log(feed);
 
         if (!feed.entry) {

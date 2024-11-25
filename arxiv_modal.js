@@ -7,6 +7,18 @@ export function close() {
 
   context.modal.style.display = "none";
   context.modal.querySelector(".alwin-x-modal-body").innerHTML = "";
+  document.removeEventListener("click", handleClickOutsideModalContent);
+}
+
+function handleClickOutsideModalContent(event) {
+  const modalContent = document.querySelector(".alwin-x-modal-content");
+  if (!modalContent) {
+    return;
+  }
+
+  if (!modalContent.contains(event.target)) {
+    close();
+  }
 }
 
 export function render() {
@@ -38,6 +50,7 @@ export function show() {
   }
 
   context.modal.style.display = "block";
+  document.addEventListener("click", handleClickOutsideModalContent);
 }
 
 export function renderItem(item) {

@@ -2,7 +2,7 @@
 .alwin-x-modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 1000; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -62,7 +62,7 @@
   font-weight: 700;
 }
 
-.alwin-x-modal-item > .alwin-x-modal-arxiv-author {
+.alwin-x-modal-item > .alwin-x-arxiv-author {
   font-size: 1.1em;
   color: #666;
 }
@@ -92,12 +92,20 @@
     color: #000;
   }
 
-  .alwin-x-modal-item > .alwin-x-modal-arxiv-author {
+  .alwin-x-modal-header > h2 {
+    color: #000;
+  }
+
+  .alwin-x-modal-item > .alwin-x-arxiv-author {
     color: #666;
   }
 
   .alwin-x-modal-item > .alwin-x-arxiv-title {
     color: #000;
+  }
+
+  .alwin-x-modal-item > .alwin-x-arxiv-published-date {
+    color: #666;
   }
 }
 
@@ -122,11 +130,19 @@
     color: #fff;
   }
 
-  .alwin-x-modal-item > .alwin-x-modal-arxiv-author {
+  .alwin-x-modal-header > h2 {
+    color: #fff;
+  }
+
+  .alwin-x-modal-item > .alwin-x-arxiv-author {
     color: #999;
   }
 
   .alwin-x-modal-item > .alwin-x-arxiv-title {
     color: #fff;
+  }
+
+  .alwin-x-modal-item > .alwin-x-arxiv-published-date {
+    color: #999;
   }
 }

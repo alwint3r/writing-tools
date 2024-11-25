@@ -30,7 +30,6 @@
   font-weight: bold;
   cursor: pointer;
 }
-
 .alwin-x-close:hover,
 .alwin-x-close:focus {
   color: black;
@@ -38,35 +37,33 @@
   cursor: pointer;
 }
 
+/* Modal Header */
 .alwin-x-modal-header {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
 .alwin-x-modal-header > h2 {
   flex-grow: 1;
   font-size: 1.5em;
   font-weight: 700;
 }
 
+/* Modal Item */
 .alwin-x-modal-item {
   margin: 20px 0;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-
 .alwin-x-modal-item > .alwin-x-arxiv-title {
   font-size: 1.2em;
   font-weight: 700;
 }
-
 .alwin-x-modal-item > .alwin-x-arxiv-author {
   font-size: 1.1em;
   color: #666;
 }
-
 .alwin-x-modal-item > .alwin-x-modal-arxiv-abstract {
   margin-top: 10px;
 }
@@ -76,36 +73,40 @@
   .alwin-x-modal {
     background-color: rgba(0, 0, 0, 0.4);
   }
-
   .alwin-x-modal-content {
     background-color: #fff;
     color: #000;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   }
-
   .alwin-x-close {
     color: #aaa;
   }
-
   .alwin-x-close:hover,
   .alwin-x-close:focus {
     color: #000;
   }
-
   .alwin-x-modal-header > h2 {
     color: #000;
   }
-
   .alwin-x-modal-item > .alwin-x-arxiv-author {
     color: #666;
   }
-
   .alwin-x-modal-item > .alwin-x-arxiv-title {
     color: #000;
   }
-
   .alwin-x-modal-item > .alwin-x-arxiv-published-date {
     color: #666;
+  }
+
+  /* Link styles for light mode */
+  .alwin-x-modal-content a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+  }
+  .alwin-x-modal-content a:hover,
+  .alwin-x-modal-content a:focus {
+    color: #0056b3; /* Darker blue on hover/focus */
+    text-decoration: underline;
   }
 }
 
@@ -114,35 +115,39 @@
   .alwin-x-modal {
     background-color: rgba(0, 0, 0, 0.75);
   }
-
   .alwin-x-modal-content {
     background-color: #1a1a1a;
     color: #e0e0e0;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
   }
-
   .alwin-x-close {
     color: #666;
   }
-
   .alwin-x-close:hover,
   .alwin-x-close:focus {
     color: #fff;
   }
-
   .alwin-x-modal-header > h2 {
-    color: #fff;
+    color: #e0e0e0;
   }
-
   .alwin-x-modal-item > .alwin-x-arxiv-author {
-    color: #999;
+    color: #b3b3b3;
   }
-
   .alwin-x-modal-item > .alwin-x-arxiv-title {
-    color: #fff;
+    color: #e0e0e0;
+  }
+  .alwin-x-modal-item > .alwin-x-arxiv-published-date {
+    color: #b3b3b3;
   }
 
-  .alwin-x-modal-item > .alwin-x-arxiv-published-date {
-    color: #999;
+  /* Link styles for dark mode */
+  .alwin-x-modal-content a {
+    color: #1e90ff; /* Light blue link color */
+    text-decoration: none;
+  }
+  .alwin-x-modal-content a:hover,
+  .alwin-x-modal-content a:focus {
+    color: #4682b4; /* Darker light blue on hover/focus */
+    text-decoration: underline;
   }
 }
